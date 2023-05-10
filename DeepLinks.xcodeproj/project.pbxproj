@@ -11,6 +11,12 @@
 		CCC8B24029E65BE400821850 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC8B23F29E65BE400821850 /* ContentView.swift */; };
 		CCC8B24229E65BE500821850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC8B24129E65BE500821850 /* Assets.xcassets */; };
 		CCC8B24529E65BE500821850 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC8B24429E65BE500821850 /* Preview Assets.xcassets */; };
+		CCC8B25029E65C9D00821850 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC8B24F29E65C9D00821850 /* Tab.swift */; };
+		CCC8B25329E65D9100821850 /* HomeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC8B25229E65D9100821850 /* HomeStack.swift */; };
+		CCC8B25529E65DA500821850 /* FavoritesStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC8B25429E65DA500821850 /* FavoritesStack.swift */; };
+		CCC8B25729E65DAF00821850 /* SettingsStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC8B25629E65DAF00821850 /* SettingsStack.swift */; };
+		CCC8B25929E6606000821850 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC8B25829E6606000821850 /* AppData.swift */; };
+		CCC8B25B29E6613F00821850 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC8B25A29E6613F00821850 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,13 @@
 		CCC8B23F29E65BE400821850 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CCC8B24129E65BE500821850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCC8B24429E65BE500821850 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CCC8B24F29E65C9D00821850 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		CCC8B25229E65D9100821850 /* HomeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStack.swift; sourceTree = "<group>"; };
+		CCC8B25429E65DA500821850 /* FavoritesStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesStack.swift; sourceTree = "<group>"; };
+		CCC8B25629E65DAF00821850 /* SettingsStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStack.swift; sourceTree = "<group>"; };
+		CCC8B25829E6606000821850 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		CCC8B25A29E6613F00821850 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		CCC8B25C29E67BFF00821850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +64,11 @@
 		CCC8B23C29E65BE400821850 /* DeepLinks */ = {
 			isa = PBXGroup;
 			children = (
+				CCC8B25C29E67BFF00821850 /* Info.plist */,
 				CCC8B23D29E65BE400821850 /* DeepLinksApp.swift */,
 				CCC8B23F29E65BE400821850 /* ContentView.swift */,
+				CCC8B24C29E65C7500821850 /* Model */,
+				CCC8B24B29E65C6F00821850 /* View */,
 				CCC8B24129E65BE500821850 /* Assets.xcassets */,
 				CCC8B24329E65BE500821850 /* Preview Content */,
 			);
@@ -65,6 +81,34 @@
 				CCC8B24429E65BE500821850 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CCC8B24B29E65C6F00821850 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CCC8B25A29E6613F00821850 /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CCC8B24C29E65C7500821850 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CCC8B25129E65D8300821850 /* NavStacks */,
+				CCC8B24F29E65C9D00821850 /* Tab.swift */,
+				CCC8B25829E6606000821850 /* AppData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CCC8B25129E65D8300821850 /* NavStacks */ = {
+			isa = PBXGroup;
+			children = (
+				CCC8B25229E65D9100821850 /* HomeStack.swift */,
+				CCC8B25429E65DA500821850 /* FavoritesStack.swift */,
+				CCC8B25629E65DAF00821850 /* SettingsStack.swift */,
+			);
+			path = NavStacks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +181,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCC8B25529E65DA500821850 /* FavoritesStack.swift in Sources */,
+				CCC8B25729E65DAF00821850 /* SettingsStack.swift in Sources */,
 				CCC8B24029E65BE400821850 /* ContentView.swift in Sources */,
+				CCC8B25329E65D9100821850 /* HomeStack.swift in Sources */,
 				CCC8B23E29E65BE400821850 /* DeepLinksApp.swift in Sources */,
+				CCC8B25029E65C9D00821850 /* Tab.swift in Sources */,
+				CCC8B25B29E6613F00821850 /* Home.swift in Sources */,
+				CCC8B25929E6606000821850 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +320,7 @@
 				DEVELOPMENT_TEAM = Q528HJU2Y4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeepLinks/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +350,7 @@
 				DEVELOPMENT_TEAM = Q528HJU2Y4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeepLinks/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
